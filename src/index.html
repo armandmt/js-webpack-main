@@ -9,8 +9,61 @@
 <body>
     <!-- Comentario -->
     <!-- Comentario -->
-    <!-- Comentario -->
-    <img src="assets/img/webpack-logo.png" alt="Webpack logo">
 
+    <div id="menu">
+        <div align="center">
+        <button id="opinar">Dona la teva opinió</button>
+        <button id="llistar">Llistar les opinions</button>
+        <hr width=50%>
+    </div>
+    </div>
+    <div id="form">
+        <h1 align="center">Escriu la teva opinió</h1>
+        <hr width=50%>
+        <div align="center">
+            <form>
+                <table>
+                    <tr><td>El teu nom i cognoms</td><td><input type="text" id="nom"><br/></td></tr>
+                    <tr><td>Escull el producte</td><td>
+                        <select name="producte" id="producte">
+                            <option value="">----------------------</option>
+                        </select>
+                    <tr>
+                        <td>Escriu la teva opinió</td>
+                        <td><textarea cols=""50" rows="10" id="opinio"></textarea></td>
+                    <tr>
+                        <td>Dona una valoració</td>
+                        <td id="valoracions">
+                            <img id="1" style="width: 30px;" src="assets/img/punt_no.jpg">
+                            <img id="2" style="width: 30px;" src="assets/img/punt_no.jpg">
+                            <img id="3" style="width: 30px;" src="assets/img/punt_no.jpg">
+                            <img id="4" style="width: 30px;" src="assets/img/punt_no.jpg">
+                            <img id="5" style="width: 30px;" src="assets/img/punt_no.jpg">
+                        </td>
+                        <input type="hidden" value="0" id="valoracio">
+
+                    
+                    </td></tr>
+            </table> 
+            <button id="envia">Envia</button>
+            <button id="esborra">Esborra</button>
+            
+        </form>
+    </div>
+    </div>
+    <!-- llistat -->
+    <div id="llistat">
+    <hr width=50%>
+    <div align="center">
+       <h2>Llistat d'opinions</h2>
+       <table border="1" id="taulallistat">
+           <tr><td>Valorant</td><td>Producte</td><td>Valoració</td></tr>
+           
+       </table>
+       
+    </div>
+    <hr width=50%>
+
+</div>
 </body>
 </html>
